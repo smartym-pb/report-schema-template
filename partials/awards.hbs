@@ -1,0 +1,10 @@
+{{#if data.awards.length}}
+<section id="awards">
+	<div class="title">AWARDS</div>
+	{{#each data.awards}}
+	<div class="item">
+			{{title}} ({{awarder}}){{#unless @last}},{{/unless}}
+	</div>
+	{{/each}}
+</section>
+{{/if}}
